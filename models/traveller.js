@@ -27,7 +27,14 @@ Traveller.prototype.calculateTotalDistanceTravelled = function () {
 };
 
 Traveller.prototype.getUniqueModesOfTransport = function () {
-
+  const allModes = this.getModesOfTransport();
+  const uniqueModes = [];
+  allModes.forEach(function(mode) {
+    if (!uniqueModes.includes(mode)) {
+      uniqueModes.push(mode);
+    }
+  });
+  return uniqueModes;
 };
 
 
