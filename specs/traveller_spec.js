@@ -54,7 +54,7 @@ describe('Traveller', function() {
     assert.deepStrictEqual(actual, traveller.getModesOfTransport());
   });
 
-  xit('should be able to get journeys by transport', function() {
+  it('should be able to get journeys by transport', function() {
     const actual = [
       journey1,
       journey2
