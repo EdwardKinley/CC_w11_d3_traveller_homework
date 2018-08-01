@@ -62,7 +62,7 @@ describe('Traveller', function() {
     assert.deepStrictEqual(actual, traveller.getJourneysByTransport('train'));
   });
 
-  xit('should be able to get journeys over a certain distance', function() {
+  it('should be able to get journeys over a certain distance', function() {
     const actual = [
       journey3,
       journey4
